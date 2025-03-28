@@ -20,43 +20,42 @@
             color: white;
             padding: 15px;
             text-align: center;
+            position: relative;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
+        header img {
+            width: 100px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 50%;
+        }
+
+        .carousel {
+            width: 100%;
+            overflow: hidden;
             display: flex;
             justify-content: center;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .banner {
-            background: url('https://source.unsplash.com/1600x600/?pink,jewelry') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .carousel img {
+            width: 80%;
+            max-height: 300px;
+            border-radius: 10px;
+            transition: transform 0.5s;
         }
 
-        .btn {
-            background-color: #ff3399;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 18px;
+        .cart {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px;
             border-radius: 5px;
-            margin-top: 15px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            cursor: pointer;
         }
 
         .produtos {
@@ -122,8 +121,8 @@
     </style>
 </head>
 <body>
-
     <header>
+        <img src="logo.png" alt="Dona Fer Bijuterias">
         <h1>Dona Fer Bijuterias</h1>
         <nav>
             <ul>
@@ -132,12 +131,19 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+        <div class="cart">🛒 Carrinho</div>
     </header>
 
     <section id="home" class="banner">
         <h2>Brilhe com nossas bijuterias exclusivas!</h2>
         <p>Confira nossa coleção e encontre a peça perfeita para você.</p>
         <a href="#produtos" class="btn">Ver Produtos</a>
+    </section>
+
+    <section class="carousel">
+        <img src="imagens/carrossel1.jpg" alt="Promoção">
+        <img src="imagens/carrossel2.jpg" alt="Novidades">
+        <img src="imagens/carrossel3.jpg" alt="Destaques">
     </section>
 
     <section id="produtos" class="produtos">
@@ -174,6 +180,5 @@
     <footer>
         <p>&copy; 2025 Dona Fer Bijuterias | Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
