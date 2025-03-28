@@ -1,9 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-  <meta charset="utf-8">
-    </head>
-    <body>
-     Bem vindo
-    </body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dona Fer Bijuterias</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Dona Fer Bijuterias</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <h2>Brilhe com nossas bijuterias exclusivas!</h2>
+        <p>Confira nossa coleção e encontre a peça perfeita para você.</p>
+        <a href="#produtos" class="btn">Ver Produtos</a>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="container">
+            <div class="produto">
+                <img src="https://source.unsplash.com/300x300/?jewelry,necklace" alt="Colar Dourado">
+                <h3>Colar Dourado</h3>
+                <p>R$ 49,90</p>
+            </div>
+            <div class="produto">
+                <img src="https://source.unsplash.com/300x300/?jewelry,earrings" alt="Brincos Elegantes">
+                <h3>Brincos Elegantes</h3>
+                <p>R$ 29,90</p>
+            </div>
+            <div class="produto">
+                <img src="https://source.unsplash.com/300x300/?jewelry,bracelet" alt="Pulseira Charmosa">
+                <h3>Pulseira Charmosa</h3>
+                <p>R$ 39,90</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dona Fer Bijuterias | Todos os direitos reservados.</p>
+    </footer>
+
+</body>
 </html>
